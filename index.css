@@ -272,6 +272,12 @@ color: #ffffff;
     height: 100px;
     margin-top: 30px;
 }
+@media screen and (min-width: 1920px) {
+    body {
+        display:flex;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 1400px) {
     .preview:after {
         width: 60%;
@@ -287,6 +293,7 @@ color: #ffffff;
     .preview::before {
         width: 40%;
     }
+}
 @media screen and (max-width: 992px) {
     .content {
         display: block;
@@ -357,5 +364,3 @@ color: #ffffff;
         display: block;
     }
 }
-}
-
