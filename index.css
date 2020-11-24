@@ -356,6 +356,10 @@ color: #ffffff;
     .form-lists {
         font-size: 30px;
     }
+    .form-list {
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
     .form-inputs-block> :nth-child(-n+5) {
         display: block;
     }
