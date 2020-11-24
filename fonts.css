@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Segoe WP N;
+    src: url('../segoe-wp-n.ttf');
+    src: local(Segoe WP N), url('../segoe-wp-n.ttf')
+}
