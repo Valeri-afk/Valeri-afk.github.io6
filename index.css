@@ -275,6 +275,7 @@ color: #ffffff;
 @media screen and (min-width: 1920px) {
     body {
         display:flex;
+        flex-direction:column;
         align-items: center;
     }
 }
