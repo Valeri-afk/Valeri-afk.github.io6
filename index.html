@@ -1,372 +1,203 @@
-@import 'fonts.css';
-body {
-    margin: 0 auto;
-    box-sizing: border-box;
-    min-width: 320px;
-    max-width: 1920px;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-}
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Название страницы</title>
+<link rel='stylesheet' href='index.css' type='text/css'>
+</head>
+<body>
+    <div class='wrapper'>
+        <header class='header'>
+            <div class='header-logo'>
+                Indo Tourism
+            </div>
+            <nav>
+                        <ul class='header-menu'>
+                            <li class='header-list'><a class='header-link' href='#'>Home</a></li>
+                            <li class='header-list'><a class='header-link' href='#'>About us</a></li>
+                            <li class='header-list'><a class='header-link' href='#'>Projects</a></li>
+                        </ul>
+            </nav>
+        </header>
+    </div>
 
-.header {
-    display: flex;
-    align-items: center;
-}
-.header-logo {
-    width: 50%;
-    font-size: 36px;
-letter-spacing: -2px;
-line-height: 36px;
-font-family: "Times New Roman";
-}
-.header-menu {
-    font-size: 16px;
-line-height: 36px;
-color: #676767;
-font-weight: 300;
-font-family: "Segoe WP N";
-padding: 30px 20px;
-margin-block-start: 0px;
-margin-block-end: 0px;
-}
-.header-list {
-display: inline-flex;
-}
-.header-menu :not(:first-child) {
-    margin-left: 40px;
-}
-@media screen and (max-width: 992px) {
-    .header-menu {
-        margin-left: 0;
-        font-size: 24px;
-    }
-    .header-logo {
-        display: none;
-    }
-}
-.banner {
-    display: flex;
-    justify-content: center;
-width: 100%;
-height: 350px;
-    background-image: url('Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400-scaled.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.banner-inner {
-    flex-wrap: wrap;
-    padding: 10px;
-    width: 700px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.banner-title {
-    font-size: 38px;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: "Segoe WP N";
-}
-.banner-btn {
-    width: 274px;
-height: 50x;
-border-radius: 4px;
-background-image: linear-gradient(0deg, #34ad22 0%, #6ed158 100%);
-border: 6px solid rgba(0,0,0,0.12);
-font-size: 34px;
-color: #ffffff;
-font-weight: bold;
-font-family: "Segoe WP";
-text-align: center;
-filter: drop-shadow(0.5px 0.866px 0px rgba(0,0,0,0.2));
-}
-
-.svg-icon {
-    width: 90px;
-    height: 90px;
-}
-.content {
-    display: flex;
-}
-.column {
-font-size: 20px;
-line-height: 34px;
-color: #7e7c7c;
-font-weight: 300;
-font-family: "Segoe WP";
-}
-.content-item {
-    padding: 20px;   
-}
-.content-item__text {
-    margin-block-start: 0px;
-    text-align: center;
-}
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    background-color: gray;
-}
-.footer-text {
-    font-size: 14px;
-color: #ffffff;
-font-weight: 300;
-font-family: "Segoe WP";
-text-align: center;
-}
-.contact-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    margin: auto;
-    margin-top: -50px;
-    border: 2px solid rgb(104, 102, 102);
-}
-
-
-.banner-wrapper {
-    padding: 0px;
-}
-.consultation__form {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.consultation__form-btn {
-    height: 45px;
-    padding: 0 30px;
-    margin-left: auto;
-    margin-right: 30px;
-    color: #ffffff;
-    background-color: #32a836;
-    border-radius: 5px;
-    border: 0px;
-}
-.consultation__form-title {
-    margin-left: 30px;
-    color:#1f3969;
-}
-.preview {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
-.preview-text {
-    width: 30%;
-    margin-block-start: 0px;
-    text-align: center;
-    padding: 15px;
-    border-top-right-radius: -10px;
-border-top-left-radius: -10px;
-border-bottom-right-radius: 40px;
-border-bottom-left-radius: 40px;
-background-color: #4a5770;
-color: #ffffff;
-}
-.line {
-    width: 35%;
-    background-color:#4a5770;
-    height: 10px;
-}
-
-.form-wrapper {
-    padding: 40px;
-}
-.form {
-    display: flex;
-    padding: 30px 0;
-    border-top: 1px solid gray;
-}
-.form-text-block {
-    width: 20%;
-}
-.form-inputs-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80%;
-}
-.form p {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-.form-row {
-    display: flex;
-    padding: 0 20px;
-}
-.form-lists {
-    list-style-type: none;
-    padding-inline-start: 0px;
-    height: 100%;
-    margin: 0;
-}
-.form-list {
-    margin-bottom: 70px;
-}
-.form-list-name:after {
-    content:'*';
-    color: #e81336;
-    margin-left: 10px;
-}
-.form-list-email:after {
-    content:'*';
-    color: #e81336;
-    margin-left: 10px;
-}
-.input__email {
-    width: 70%;
-    height: 30px;
-    margin: 30px 0;
-}
-.input__name {
-    height: 25px;
-}
-.input__area-code {
-    width: 60px;
-    height: 25px;
-    margin-top: 15px;
-}
-.area-code-inner {
-    position: relative;
-    margin-right: 40px;
-}
-.area-code-inner:after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: black;
-    top: 50%;
-    left: 115%;
-}
-.input__number {
-    height: 25px;
-    margin-top: 15px;
-}
-.input__consultation-text {
-    width: 100%;
-    height: 100px;
-    margin-top: 20px;
-}
-.input__comments {
-    width: 100%;
-    height: 100px;
-    margin-top: 30px;
-}
-.contact-menu {
-    width: 800px;
-    height: 545px;
-    overflow-x: scroll;
-    margin-top: 0px;
-}
-.content-wrapper {
-    padding: 10px 40px;
-}
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-@media screen and (max-width: 992px) {
-    .content {
-        display: block;
-    }
-    .contact-menu {
-        width: 100%;
-        margin-top: 0px;
-        height: auto;
-    }
-    .column {
-        display: flex;
-        flex-direction: row;
-    }
-    .content-wrapper {
-        padding: 0px;
-    }
-    .content-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .form-row {
-        justify-content: space-between;
-        margin-bottom: 45px;
-    }
-    .input__email {
-        width: 100%;
-        border: 1px solid black;
-    }
-    .name-inner {
-        width: 50%;
-    }
-    .input__name {
-        width: 100%;
-        border: 1px solid black;
-    }
-    .area-code-inner {
-        width: 40%;     
-    }
-    .number-inner {
-        width: 40%;
-    }
-    .input__number {
-        width: 100%;
-        border: 1px solid black;
-    }
-    .input__area-code {
-        width: 100%;
-        border: 1px solid black;
-    }
-    .input__consultation-text {
-        width: 100%;
-        border: 1px solid black;
-    }
-    .input__comments {
-        width: 100%;
-        border: 1px solid black;
-    }
-    .form-wrapper {
-        padding: 30px;
-    }
-    .column {
-        display: flex;
-        justify-content: space-between;
-    }
-    .form-lists {
-        font-size: 30px;
-    }
-    .form-list {
-        margin-bottom: 70px;
-        margin-top: 20px;
-    }
-    .form-inputs-block> :nth-child(-n+5) {
-        display: block;
-    }
-    .form-inputs-block> :nth-child(-n+2) {
-        margin-bottom: 0px;
-    }
-    .area-code-inner:after {
-        display: none;
-    }
-    .banner {
-        height: 400px;
-    }
-    .banner-inner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner-title {
-        font-size: 35px;
-    }
-    .banner-btn {
-        margin: auto;
-        margin-top: 30px;
-    }
-}
+    <div class='wrapper banner-wrapper'>
+        <div class='banner'>
+            <div class='banner-inner'>
+                <h1 class='banner-title'><span>I like to ask the same question</span><br>many many times</h1>
+                <button class='banner-btn'>Ok ask me</button>
+            </div>           
+            </div>
+    </div>
+    <div class='wrapper content-wrapper'>
+        <div class='content'>
+            <div class='column'>
+                <div class='content-item'>
+                <div> 
+                        <a href='#'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style='display:none'>
+                        <symbol id='globe-icon' viewBox="0 0 31.416 31.416">
+                            <g>
+                                <path d="M28.755,6.968l-0.47,0.149L25.782,7.34l-0.707,1.129l-0.513-0.163L22.57,6.51l-0.289-0.934L21.894,4.58l-1.252-1.123
+                    l-1.477-0.289l-0.034,0.676l1.447,1.412l0.708,0.834L20.49,6.506l-0.648-0.191L18.871,5.91l0.033-0.783l-1.274-0.524l-0.423,1.841
+                    l-1.284,0.291l0.127,1.027l1.673,0.322l0.289-1.641l1.381,0.204l0.642,0.376h1.03l0.705,1.412l1.869,1.896l-0.137,0.737
+                    l-1.507-0.192l-2.604,1.315l-1.875,2.249l-0.244,0.996h-0.673l-1.254-0.578l-1.218,0.578l0.303,1.285l0.53-0.611l0.932-0.029
+                    l-0.065,1.154l0.772,0.226l0.771,0.866l1.259-0.354l1.438,0.227l1.67,0.449l0.834,0.098l1.414,1.605l2.729,1.605l-1.765,3.372
+                    l-1.863,0.866l-0.707,1.927l-2.696,1.8l-0.287,1.038c6.892-1.66,12.019-7.851,12.019-15.253
+                    C31.413,12.474,30.433,9.465,28.755,6.968z"/>
+                <path d="M17.515,23.917l-1.144-2.121l1.05-2.188l-1.05-0.314l-1.179-1.184l-2.612-0.586l-0.867-1.814v1.077h-0.382l-2.251-3.052
+                    v-2.507L7.43,8.545L4.81,9.012H3.045L2.157,8.43L3.29,7.532L2.16,7.793c-1.362,2.326-2.156,5.025-2.156,7.916
+                    c0,8.673,7.031,15.707,15.705,15.707c0.668,0,1.323-0.059,1.971-0.137l-0.164-1.903c0,0,0.721-2.826,0.721-2.922
+                    C18.236,26.357,17.515,23.917,17.515,23.917z"/>
+                <path d="M5.84,5.065l2.79-0.389l1.286-0.705l1.447,0.417l2.312-0.128l0.792-1.245l1.155,0.19l2.805-0.263L19.2,2.09l1.09-0.728
+                    l1.542,0.232l0.562-0.085C20.363,0.553,18.103,0,15.708,0C10.833,0,6.474,2.222,3.596,5.711h0.008L5.84,5.065z M16.372,1.562
+                    l1.604-0.883l1.03,0.595l-1.491,1.135l-1.424,0.143l-0.641-0.416L16.372,1.562z M11.621,1.691l0.708,0.295l0.927-0.295
+                    l0.505,0.875l-2.14,0.562l-1.029-0.602C10.591,2.526,11.598,1.878,11.621,1.691z"/>
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class='svg-icon'>
+                        <use xlink:href='#globe-icon'>
+                        </use>
+                    </svg>
+                    </div>
+                        </a>
+                    <p class='content-item__text'>Sites the world</p>
+                </div>
+                <div class='content-item'>
+                <div> 
+                        <a href='#'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style='display:none'>
+                        <symbol id='photography-icon' viewBox="0 0 612.002 612.002">
+                            <g>
+                                <path d="M560.415,141.623h-81.266L464.411,92.68c-6.562-21.794-26.634-36.711-49.396-36.711H305.777
+                    c-22.762,0-42.832,14.917-49.396,36.711l-14.738,48.944H51.587C23.096,141.623,0,164.719,0,193.208v311.237
+                    c0,28.491,23.096,51.587,51.587,51.587h508.828c28.491,0,51.587-23.096,51.587-51.587V193.208
+                    C612,164.719,588.904,141.623,560.415,141.623z M360.038,483.686c-75.972,0-137.563-61.59-137.563-137.563
+                    s61.59-137.563,137.563-137.563s137.565,61.59,137.565,137.563S436.012,483.686,360.038,483.686z"/>
+                <path d="M360.038,260.147c-47.482,0-85.976,38.494-85.976,85.976s38.494,85.978,85.976,85.978s85.978-38.496,85.978-85.978
+                    S407.521,260.147,360.038,260.147z M419.916,342.764c-8.099,8.099-28.276,1.052-45.069-15.739
+                    c-16.791-16.793-23.836-36.97-15.737-45.069c8.099-8.099,28.276-1.054,45.067,15.739
+                    C420.968,314.486,428.015,334.664,419.916,342.764z"/>
+                <path d="M168.949,114.542c0-12.58-10.197-22.775-22.775-22.775H97.149c-12.578,0-22.777,10.197-22.777,22.775v11.487h94.575
+                    v-11.487H168.949z"/>
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class='svg-icon'>
+                        <use xlink:href='#photography-icon'>
+                        </use>
+                    </svg>
+                    </div> 
+                        </a>
+                    <p class='content-item__text'>Photography</p>
+                </div>
+            </div>
+            <div class='contact-menu'>
+                <div class='consultation__form'>
+                <h1 class='consultation__form-title'>Financial Consultation Form</h1>
+                </div>
+                <div class='preview'>
+                    <div class='line'></div>
+                    <p class='preview-text'>Предпросмотр формы</p>
+                    <div class='line'></div>
+                </div>
+                <div class='form-wrapper'>
+                    <h2 class='form-wrapper__title'>Financial Consultation</h2>
+                    <form class='form'>
+                        <div class='form-text-block'>
+                            <ul class='form-lists'>
+                                <li class='form-list'><p class='form-list-name'>Name</p></li>
+                                <li class='form-list'><p class='form-list-email'>E-mail</p></li>
+                                <li class='form-list'><p>Phone Number</p></li>
+                                <li class='form-list'><p>What type of financial consultation do you want?</p></li>
+                                <li class='form-list'><p>Additional comments</p></li>
+                            </ul>             
+                        </div>
+                        <div class='form-inputs-block'>
+                            <div class='form-row'>
+                                <div class='name-inner' style="margin-right: 50px;">
+                                    <input class='input__name' type='text' name='firstName'>
+                                    <p>First Name</p>
+                                </div>
+                                <div class='name-inner'>
+                                    <input class='input__name' type='text' name='lastName'>
+                                    <p>Last Name</p>
+                                </div>
+                            </div>
+                            <div class='form-row'>
+                                <input class='input__email' type='email' placeholder="ex:myname@example.com" name='email'>
+                            </div>
+                            <div class='form-row'>
+                                <div class='area-code-inner'>
+                                    <input class='input__area-code' type="text" name='areaCode'>
+                                    <p>Area Code</p>
+                                </div>
+                                <div class='number-inner'>
+                                    <input class='input__number' type="number" name='Number'>
+                                    <p>Phone Number</p>
+                                </div>
+                            </div>
+                            <div class='form-row'>
+                                <input class='input__consultation-text' type="text" name='consultate'>
+                            </div>
+                            <div class='form-row'>
+                                <input class='input__comments' type="text" name='comments'>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class='column'>
+                <div class='content-item'>
+                <div> 
+                        <a href='#'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style='display:none'>
+                        <symbol id='basket-icon' viewBox="0 0 512 512">
+                            <g>
+                                <path d="m157.004 277.769c-9.706 0-17.602 7.896-17.602 17.602v101.017c0 9.706 7.896 17.602 17.602 17.602h20.204c9.706 0 17.602-7.896 17.602-17.602v-101.018c0-9.705-7.896-17.602-17.602-17.602h-20.204zm22.805 17.601v101.017c0 1.435-1.167 2.602-2.602 2.602h-20.204c-1.435 0-2.602-1.167-2.602-2.602v-101.017c0-1.435 1.167-2.602 2.602-2.602h20.204c1.435.001 2.602 1.168 2.602 2.602z"/>
+                                <path d="m245.898 277.769c-9.706 0-17.602 7.896-17.602 17.602v101.017c0 9.706 7.896 17.602 17.602 17.602h20.203c9.706 0 17.602-7.896 17.602-17.602v-101.018c0-9.705-7.896-17.602-17.602-17.602h-20.203zm22.805 17.601v101.017c0 1.435-1.167 2.602-2.602 2.602h-20.203c-1.435 0-2.602-1.167-2.602-2.602v-101.017c0-1.435 1.167-2.602 2.602-2.602h20.203c1.435.001 2.602 1.168 2.602 2.602z"/>
+                                <path d="m354.996 277.769h-20.204c-9.706 0-17.602 7.896-17.602 17.602v101.017c0 9.706 7.896 17.602 17.602 17.602h20.204c9.706 0 17.602-7.896 17.602-17.602v-101.018c0-9.705-7.896-17.601-17.602-17.601zm2.602 118.618c0 1.435-1.167 2.602-2.602 2.602h-20.204c-1.435 0-2.602-1.167-2.602-2.602v-101.017c0-1.435 1.167-2.602 2.602-2.602h20.204c1.435 0 2.602 1.167 2.602 2.602z"/>
+                                <path d="m494.4 194.937h-50.61c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h50.61c1.434 0 2.6 1.166 2.6 2.6v20.2c0 1.438-1.167 2.609-2.6 2.609h-123.014c.599-1.166 1.122-2.38 1.559-3.64 2.423-6.992 1.979-14.509-1.252-21.166l-.293-.604h37.29c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-44.569l-62.989-129.807c-6.67-13.742-23.278-19.496-37.018-12.829-3.096 1.502-5.827 3.528-8.114 5.964-2.287-2.435-5.018-4.462-8.114-5.964-13.743-6.668-30.349-.913-37.018 12.829l-62.989 129.808h-130.279c-9.705 0-17.6 7.896-17.6 17.6v20.2c0 9.71 7.896 17.609 17.6 17.609h10.331l30.533 180.63c3.082 18.253 18.759 31.501 37.276 31.501h256.05c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-256.05c-11.17 0-20.626-7.99-22.485-19l-30.111-178.131h22.736c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-48.28c-1.434 0-2.6-1.171-2.6-2.609v-20.2c0-1.434 1.167-2.6 2.6-2.6h123l-.293.604c-3.23 6.657-3.675 14.174-1.252 21.166.437 1.26.96 2.474 1.559 3.64h-39.634c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h368.844l-30.984 178.236c-1.901 10.947-11.351 18.894-22.47 18.894h-29.48c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h29.48c18.431 0 34.097-13.175 37.249-31.326l31.43-180.805h9.351c9.705 0 17.6-7.899 17.6-17.609v-20.2c0-9.705-7.896-17.6-17.6-17.6zm-230.195-121.872c1.111-3.206 3.404-5.788 6.457-7.269 1.782-.865 3.667-1.274 5.526-1.274 4.716 0 9.255 2.637 11.449 7.156l70.561 145.411c1.481 3.053 1.685 6.499.574 9.705s-3.405 5.788-6.457 7.269c-3.053 1.483-6.5 1.686-9.706.574-3.206-1.11-5.787-3.404-7.269-6.457l-70.561-145.41c-1.481-3.053-1.685-6.499-.574-9.705zm-8.205 25.972 46.536 95.9h-93.072zm-31.637-27.359c2.194-4.521 6.732-7.156 11.449-7.156 1.858 0 3.745.41 5.526 1.274 3.052 1.48 5.346 4.062 6.457 7.269 1.111 3.206.907 6.652-.574 9.705l-70.561 145.41c-1.481 3.053-4.062 5.347-7.269 6.457-3.206 1.111-6.653.909-9.706-.574-3.052-1.48-5.346-4.062-6.457-7.269-1.111-3.206-.907-6.652.574-9.705zm-34.208 163.051 12.03-24.792h107.63l12.03 24.792c.101.209.212.411.318.617h-132.326c.106-.206.216-.408.318-.617z"/>
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class='svg-icon'>
+                        <use xlink:href='#basket-icon'>
+                        </use>
+                    </svg>
+                    </div> 
+                        </a>
+                    <p class='content-item__text'>Shopping</p>
+                </div>
+                <div class='content-item'>
+                <div> 
+                        <a href='#'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  style='display:none'>
+                        <symbol id='find-icon' viewBox="0 0 446.25 446.25">
+                            <g>
+                                <path d="M318.75,280.5h-20.4l-7.649-7.65c25.5-28.05,40.8-66.3,40.8-107.1C331.5,73.95,257.55,0,165.75,0S0,73.95,0,165.75
+                    S73.95,331.5,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.649v20.4L408,446.25L446.25,408L318.75,280.5z M165.75,280.5
+                    C102,280.5,51,229.5,51,165.75S102,51,165.75,51S280.5,102,280.5,165.75S229.5,280.5,165.75,280.5z"/>
+                            </g>
+                        </symbol>
+                    </svg>
+                    <svg class='svg-icon'>
+                        <use xlink:href='#find-icon'>
+                        </use>
+                    </svg>
+                </div> 
+                        </a>
+                    <p class='content-item__text'>Find the best</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='wrapper footer-wrapper'>
+        <footer class='footer'>
+            <p class='footer-text'>Designed by cssauthor.com</p>
+        </footer>
+    </div>
+<script></script>
+</body>
+</html>
