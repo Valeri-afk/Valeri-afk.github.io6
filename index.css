@@ -9,7 +9,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 .header {
     display: flex;
     align-items: center;
@@ -51,7 +55,7 @@ display: inline-flex;
     justify-content: center;
 width: 100%;
 height: 350px;
-    background-image: url('Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400-scaled.jpg');
+    background-image: url('../Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400-scaled.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -119,16 +123,14 @@ font-family: "Segoe WP";
 text-align: center;
 }
 .contact-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 800px;
+    height: 515px;
+    overflow-x: scroll;
     background-color: #ffffff;
     margin: auto;
-    margin-top: -50px;
+    margin-top: -120px;
     border: 2px solid rgb(104, 102, 102);
 }
-
-
 .banner-wrapper {
     padding: 0px;
 }
@@ -259,14 +261,9 @@ color: #ffffff;
     height: 100px;
     margin-top: 30px;
 }
-.contact-menu {
-    width: 800px;
-    height: 545px;
-    overflow-x: scroll;
-    margin-top: 0px;
-}
 .content-wrapper {
     padding: 10px 40px;
+    flex-grow: 1;
 }
 .column {
     display: flex;
@@ -360,6 +357,7 @@ color: #ffffff;
     .banner-inner {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .banner-title {
         font-size: 35px;
