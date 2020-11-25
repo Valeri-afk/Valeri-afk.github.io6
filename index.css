@@ -9,9 +9,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
-.wrapper {
-    padding: 0 185px;
-}
+
 .header {
     display: flex;
     align-items: center;
@@ -52,7 +50,7 @@ display: inline-flex;
     display: flex;
     justify-content: center;
 width: 100%;
-height: 800px;
+height: 350px;
     background-image: url('Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400-scaled.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +64,7 @@ height: 800px;
 }
 
 .banner-title {
-    font-size: 39px;
+    font-size: 38px;
     color: #ffffff;
     font-weight: bold;
     font-family: "Segoe WP N";
@@ -126,12 +124,14 @@ text-align: center;
     align-items: center;
     background-color: #ffffff;
     margin: auto;
-    margin-top: -200px;
+    margin-top: -50px;
     border: 2px solid rgb(104, 102, 102);
 }
 
 
-
+.banner-wrapper {
+    padding: 0px;
+}
 .consultation__form {
     display: flex;
     align-items: center;
@@ -259,48 +259,19 @@ color: #ffffff;
     height: 100px;
     margin-top: 30px;
 }
-@media screen and (min-width: 1200px) {
-    .contact-menu {
-        width: 800px;
-        height: 545px;
-        overflow-x: scroll;
-    }
-    .content {
-        margin-top: -350px;
-    }
-    .footer-wrapper {
-        padding: 0px;
-    }
-    .content-wrapper {
-        padding: 0px;
-    }
+.contact-menu {
+    width: 800px;
+    height: 545px;
+    overflow-x: scroll;
+    margin-top: 0px;
 }
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-    .contact-menu {
-     width: 60%;   
-     overflow-y: scroll;
-     height: 546px;
-    }
-    .column {
-    width: 16%;
-    text-align: center;
-    }
-    .content-wrapper {
-        padding: 0;
-        margin-top: -350px;
-    }
-    .content> :first-child {
-        margin-right: 20px;
-    }
-    .content> :last-child {
-        margin-left: 20px;
-    }
-    .banner-title {
-        font-size: 35px;
-    }
-    .name-inner {
-        margin-right: 45px;
-    }
+.content-wrapper {
+    padding: 10px 40px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
     .content {
@@ -309,8 +280,14 @@ color: #ffffff;
     .contact-menu {
         width: 100%;
         margin-top: 0px;
-        overflow-x: scroll;
-        height: 500px;
+        height: auto;
+    }
+    .column {
+        display: flex;
+        flex-direction: row;
+    }
+    .content-wrapper {
+        padding: 0px;
     }
     .content-item {
         display: flex;
@@ -362,7 +339,7 @@ color: #ffffff;
         justify-content: space-between;
     }
     .form-lists {
-        font-size: 25px;
+        font-size: 30px;
     }
     .form-list {
         margin-bottom: 70px;
@@ -378,7 +355,7 @@ color: #ffffff;
         display: none;
     }
     .banner {
-        height: 500px;
+        height: 400px;
     }
     .banner-inner {
         display: flex;
