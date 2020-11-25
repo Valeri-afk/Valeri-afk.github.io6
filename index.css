@@ -281,12 +281,18 @@ color: #ffffff;
         width: 60%;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     .preview:after {
         width: 40%;
     }
     .preview::before {
         width: 40%;
+    }
+    .column {
+        width: 15%;
+    }
+    .contact-menu {
+    width: 75%;
     }
 }
 @media screen and (max-width: 992px) {
