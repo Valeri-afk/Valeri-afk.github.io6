@@ -95,6 +95,7 @@ filter: drop-shadow(0.5px 0.866px 0px rgba(0,0,0,0.2));
     display: flex;
 }
 .column {
+    width: 15%;
 font-size: 20px;
 line-height: 34px;
 color: #7e7c7c;
@@ -129,7 +130,7 @@ text-align: center;
     background-color: #ffffff;
     margin: auto;
     margin-top: -200px;
-    width: 1100px;
+    width: 75%;
     height: auto;
     border: 2px solid rgb(104, 102, 102);
 }
@@ -287,12 +288,6 @@ color: #ffffff;
     }
     .preview::before {
         width: 40%;
-    }
-    .column {
-        width: 15%;
-    }
-    .contact-menu {
-    width: 75%;
     }
 }
 @media screen and (max-width: 992px) {
