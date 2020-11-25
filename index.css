@@ -306,11 +306,11 @@ color: #ffffff;
         justify-content: space-between;
         margin-bottom: 45px;
     }
-    .preview:after {
-        width: 70%;
+    .preview::after {
+        width: 67%;
     }
-    .preview:before {
-        width: 70%;
+    .preview::before {
+        width: 67%;
     }
     .input__email {
         width: 100%;
