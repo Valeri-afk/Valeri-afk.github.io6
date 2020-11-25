@@ -170,18 +170,18 @@ background-color: #4a5770;
 color: #ffffff;
 }
 
-.preview:after {
+.preview::after {
     content: '';
-    width: 100%;
+    width: 90%;
     height: 10px;
     top: 20%;
     right: 100%;
     position: absolute;
     background-color: #4a5770;
 }
-.preview:before {
+.preview::before {
     content: '';
-    width: 100%;
+    width: 90%;
     height: 10px;
     top: 20%;
     left: 100%;
@@ -274,19 +274,19 @@ color: #ffffff;
 }
 
 @media screen and (max-width: 1400px) {
-    .preview:after {
+    .preview::after {
         width: 60%;
     }
     .preview::before {
         width: 60%;
     }
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .preview:after {
-        width: 40%;
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .preview::after {
+        width: 34%;
     }
     .preview::before {
-        width: 40%;
+        width: 34%;
     }
     .contact-menu {
      width: 70%;   
