@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     min-width: 320px;
     max-width: 1920px;
+    padding: 0 100px;
 }
 a {
     color: inherit;
