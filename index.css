@@ -12,7 +12,6 @@ a {
 .header {
     display: flex;
     align-items: center;
-    padding: 0 100px;
 }
 .header-logo {
     font-size: 36px;
@@ -93,7 +92,6 @@ filter: drop-shadow(0.5px 0.866px 0px rgba(0,0,0,0.2));
 }
 .content {
     display: flex;
-padding: 50px;
 }
 .column {
 font-size: 20px;
