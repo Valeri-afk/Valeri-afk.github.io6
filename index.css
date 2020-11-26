@@ -110,7 +110,6 @@ font-family: "Segoe WP";
     height: 30px;
     background-color: gray;
     width: 100%;
-    margin-top: 74px;
 }
 .footer-text {
     font-size: 14px;
@@ -121,7 +120,7 @@ text-align: center;
 }
 .contact-menu {
     width: 800px;
-    height: 515px;
+    height: 650px;
     overflow-x: scroll;
     background-color: #ffffff;
     margin: auto;
@@ -260,7 +259,7 @@ color: #ffffff;
 }
 .content-wrapper {
     padding: 10px 40px;
-    flex-grow: 1;
+    padding-bottom: 0px;
 }
 .column {
     display: flex;
