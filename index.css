@@ -126,12 +126,12 @@ text-align: center;
 }
 .contact-menu {
     width: 800px;
-    height: 109%;
+    height: 110%;
+    margin: auto;
+    margin-top: -3%;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: #ffffff;
-    margin: auto;
-    margin-top: -4%;
     border: 2px solid rgb(104, 102, 102);
 }
 .banner-wrapper {
