@@ -56,7 +56,6 @@ display: inline-flex;
     display: flex;
     justify-content: center;
 width: 100%;
-height: 350px;
     background-image: url('Canada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400-scaled.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,7 +76,7 @@ height: 350px;
 }
 .banner-btn {
     width: 274px;
-height: 50x;
+height: 50px;
 border-radius: 4px;
 background-image: linear-gradient(0deg, #34ad22 0%, #6ed158 100%);
 border: 6px solid rgba(0,0,0,0.12);
@@ -95,6 +94,7 @@ filter: drop-shadow(0.5px 0.866px 0px rgba(0,0,0,0.2));
 }
 .content {
     display: flex;
+    height: 100%;
 }
 .column {
 font-size: 20px;
@@ -114,7 +114,6 @@ font-family: "Segoe WP";
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
     background-color: gray;
     width: 100%;
 }
@@ -127,12 +126,11 @@ text-align: center;
 }
 .contact-menu {
     width: 800px;
-    height: 613px;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: #ffffff;
     margin: auto;
-    margin-top: -130px;
     border: 2px solid rgb(104, 102, 102);
 }
 .banner-wrapper {
@@ -275,12 +273,18 @@ color: #ffffff;
     flex-direction: column;
     justify-content: space-between;
 }
-@media screen and (min-width: 1921px) {
-    .content-wrapper {
-        flex-grow: 1
+@media screen and (min-width: 992px) {
+    .header {
+        height: 10vh;
     }
-    .contact-menu {
-        height: 778px;
+    .banner {
+        height: 30vh;
+    }
+    .content-wrapper {
+        height: 57vh;
+    }
+    .footer {
+        height: 3vh;
     }
 }
 @media screen and (max-width: 992px) {
